@@ -21,7 +21,7 @@ function Navbar() {
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 relative flex h-16 items-center justify-between">
         <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
           <a href="/" className="navbar-global text-white">Akashic Collections</a>
-          <button type="button" className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-blue-600 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+          <button type="button" className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-blue-600 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white z-10" aria-controls="mobile-menu" aria-expanded="false">
             <span className="absolute -inset-0.5"></span>
             <span className="sr-only">Open main menu</span>
           </button>
@@ -64,7 +64,7 @@ function Navbar() {
             <div className="absolute border border-black bg-purple-900 right-0 mt-2 rounded shadow-lg">
               {isAuthenticated ? (
                 <>
-                  <LogoutButton className="p-3 rounded bg-purple-900 hover:bg-blue-900 hover:text-black cursor-pointer">
+                  <LogoutButton className="p-3 rounded bg-purple-900 hover:bg-blue-900 hover:text-black cursor-pointer z-10">
                     <Link
                       to="/"
                       className="hover:bg-blue-900 place-items-center mt-4 lg:inline-block lg:mt-0 text-black hover:text-blue-300"
@@ -73,7 +73,7 @@ function Navbar() {
                     </Link>
                   </LogoutButton>
                   <hr className="border-t border-black my-2" />
-                  <div className="p-3 rounded bg-purple-900 hover:bg-blue-900 hover:text-black cursor-pointer">
+                  <div className="p-3 rounded bg-purple-900 hover:bg-blue-900 hover:text-black cursor-pointer z-10">
                     <Link
                       to="/profile"
                       className="p-3 rounded hover:bg-blue-900 hover:text-blue-300 cursor-pointer"
@@ -83,7 +83,7 @@ function Navbar() {
                   </div>
                 </>
               ) : (
-                <LoginButton className="p-3 rounded bg-purple-900 hover:bg-blue-900 hover:text-black cursor-pointer">
+                <LoginButton className="p-3 rounded bg-purple-900 hover:bg-blue-900 hover:text-black cursor-pointer z-10">
                   <Link
                     to="/"
                     className="flex place-items-center mt-4 lg:inline-block lg:mt-0 text-black hover:text-blue-300 hover:bg-blue-900"
