@@ -13,7 +13,7 @@ const Visit = () => {
         src={bg}
         alt="drawing"
         style={{ filter: 'hue-rotate(270deg)' }}
-        className="w-full h-full object-cover"
+        className="w-full h-full"
       />
     </div>
   );
