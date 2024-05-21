@@ -1,0 +1,10 @@
+#root {
+  margin: 0 auto;
+  text-align: center;
+  background-image: radial-gradient(circle, #400080, #400080 40%, #6600cc);
+}
+
+body {
+  background-image: radial-gradient(circle, #400080, #400080 40%, #6600cc);
+  background-color: black;
+}
