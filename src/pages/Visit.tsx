@@ -13,10 +13,11 @@ const Visit = () => {
         src={bg}
         alt="drawing"
         style={{ filter: 'hue-rotate(270deg)' }}
-        className="w-full h-auto"
+        className="absolute inset-0 w-full h-full object-cover z-0"
       />
     </div>
   );
 };
 
 export default Visit;
+
