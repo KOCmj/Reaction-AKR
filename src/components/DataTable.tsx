@@ -39,7 +39,7 @@ function DataTable() {
                 open={open}
                 onClose={handleClose}
             />
-            <div className='flex flex-row'>
+            <div className='flex flex-row justify-center items-center'>
                 <div>
                     <button
                         className='border border-black m-3 p-3 bg-purple-700 rounded hover:bg-blue-800 hover:text-blue-300'
@@ -61,7 +61,7 @@ function DataTable() {
                     </button>
                 </div>
             </div>
-            <div className={open ? "hidden" : "container mx-10 my-5 flex flex-col"} style={{ height: 400, width: '100%' }}>
+            <div className={open ? "hidden" : "container mx-auto my-5 flex flex-col"} style={{ height: 400, width: '100%' }}>
                 <h2 className="p-3 bg-purple-700 my-2 rounded">Akashic Collections</h2>
                 <DataGrid
                     rows={contactData}
