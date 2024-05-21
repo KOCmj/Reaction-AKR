@@ -61,10 +61,10 @@ function Navbar() {
             <FontAwesomeIcon icon={faUser} />
           </button>
           {isProfileVisible && (
-            <div className="absolute border border-black bg-purple-900 right-0 mt-2 rounded shadow-lg">
+            <div className="absolute border border-black bg-purple-900 right-0 mt-2 rounded shadow-lg z-10">
               {isAuthenticated ? (
                 <>
-                  <LogoutButton className="p-3 rounded bg-purple-900 hover:bg-blue-900 hover:text-black cursor-pointer z-10">
+                  <LogoutButton className="p-3 rounded bg-purple-900 hover:bg-blue-900 hover:text-black cursor-pointer">
                     <Link
                       to="/"
                       className="hover:bg-blue-900 place-items-center mt-4 lg:inline-block lg:mt-0 text-black hover:text-blue-300"
@@ -73,7 +73,7 @@ function Navbar() {
                     </Link>
                   </LogoutButton>
                   <hr className="border-t border-black my-2" />
-                  <div className="p-3 rounded bg-purple-900 hover:bg-blue-900 hover:text-black cursor-pointer z-10">
+                  <div className="p-3 rounded bg-purple-900 hover:bg-blue-900 hover:text-black cursor-pointer">
                     <Link
                       to="/profile"
                       className="p-3 rounded hover:bg-blue-900 hover:text-blue-300 cursor-pointer"
@@ -83,7 +83,7 @@ function Navbar() {
                   </div>
                 </>
               ) : (
-                <LoginButton className="p-3 rounded bg-purple-900 hover:bg-blue-900 hover:text-black cursor-pointer z-10">
+                <LoginButton className="p-3 rounded bg-purple-900 hover:bg-blue-900 hover:text-black cursor-pointer">
                   <Link
                     to="/"
                     className="flex place-items-center mt-4 lg:inline-block lg:mt-0 text-black hover:text-blue-300 hover:bg-blue-900"
