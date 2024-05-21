@@ -3,6 +3,7 @@ import card from "../assets/images/card.jpeg";
 import logo from '../assets/images/bg.png';
 import { useEffect, useState } from "react";
 import AL from '../assets/images/AL.jpeg'
+import { Link } from "react-router-dom";
 
 const ProfilePage = () => {
   const { user, isAuthenticated, isLoading } = useAuth0();
@@ -57,10 +58,12 @@ const ProfilePage = () => {
         <div className="mt-10 shadow-2xl border-black border rounded w-full relative">
         <img src={AL} alt="" className="h-auto w-full" />
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
-                <a href="/visit" className="inline-block rounded-2xl text-blue-400 hover:text-blue-600 font-bold px-6 py-4 sm:px-8 sm:py-6 md:px-10 md:py-8 lg:px-12 lg:py-10 bg-black bg-opacity-60 hover:bg-opacity-80 transition duration-300"
+                <Link 
+                    to="/visit" 
+                    className="inline-block rounded-2xl text-blue-400 hover:text-blue-600 font-bold px-6 py-4 sm:px-8 sm:py-6 md:px-10 md:py-8 lg:px-12 lg:py-10 bg-black bg-opacity-60 hover:bg-opacity-80 transition duration-300"
                 >
                     Discover Our Collection Today!
-                </a>
+                </Link>
             </div>
         </div>
       </div>
