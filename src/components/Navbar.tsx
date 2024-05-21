@@ -17,7 +17,7 @@ function Navbar() {
   };
 
   return (
-    <nav className="bg-gradient-to-b from-indigo-600 to-purple-700">
+    <nav className="bg-gradient-to-b from-indigo-600 to-purple-700 z-10">
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 relative flex h-16 items-center justify-between">
         <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
           <a href="/" className="navbar-global text-white">Akashic Collections</a>
