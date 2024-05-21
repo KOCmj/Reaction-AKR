@@ -2,7 +2,7 @@ import bg from '../assets/images/bg.png';
 
 const Visit = () => {
   return (
-    <div className="relative h-svh">
+    <div className="relative h-full">
       <div className="absolute inset-0 flex items-center justify-center">
         <h1 className="text-center text-pink-500 text-4xl font-bold z-10"
         >

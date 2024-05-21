@@ -2,7 +2,7 @@ import Home from "../pages/Home";
 import Dashboard from "../pages/Dashboard";
 import Membership from "../pages/Membership";
 import ProfilePage from "../components/ProfilePage";
-import Visit from "../components/Visit";
+import Visit from "../pages/Visit";
 
 interface RouteType {
     path: string,
