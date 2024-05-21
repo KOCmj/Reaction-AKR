@@ -2,7 +2,7 @@ import authToken from '../auth_token.json'
 
 export const server_calls = {
     get: async () => {
-        const response = await fetch(`http://127.0.0.1:5000/api/books`,
+        const response = await fetch(`https://akashic-collections.onrender.com/api/books`,
          {
             method: "GET",
             headers: {
@@ -20,7 +20,7 @@ export const server_calls = {
     },
 
     create: async (data: any = {}) => {
-        const response = await fetch(`http://127.0.0.1:5000/api/books`,
+        const response = await fetch(`https://akashic-collections.onrender.com/api/books`,
          {
             method: "POST",
             headers: {
@@ -39,7 +39,7 @@ export const server_calls = {
     },
 
     update: async (id: string, data: any = {}) => {
-        const response = await fetch(`http://127.0.0.1:5000/api/books/${id}`,
+        const response = await fetch(`https://akashic-collections.onrender.com/api/books/${id}`,
          {
             method: "PUT",
             headers: {
@@ -59,7 +59,7 @@ export const server_calls = {
 
     
     delete: async (id: string) => {
-      const response = await fetch(`http://127.0.0.1:5000/api/books/${id}`,
+      const response = await fetch(`https://akashic-collections.onrender.com/api/books/${id}`,
        {
           method: "DELETE",
           headers: {
